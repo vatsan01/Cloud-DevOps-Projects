@@ -1,4 +1,4 @@
-# 🚀 End-to-End DevOps Pipeline on AWS with Terraform and EKS
+End-to-End DevOps Pipeline on AWS with Terraform and EKS
 
 ![CI/CD](https://img.shields.io/badge/GitHub%20Actions-Automated-blue?logo=githubactions)
 ![Terraform](https://img.shields.io/badge/Infrastructure-Terraform-623CE4?logo=terraform)
@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terraform**, **Helm**, and **GitHub Actions**. It provisions infrastructure, deploys a Dockerized app using CI/CD, and integrates real-time monitoring with Prometheus and Grafana.
 
@@ -15,13 +15,13 @@ This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terr
 
 ---
 
-## 🧱 Architecture Diagram
+## Architecture Diagram
 
 ![Architecture](./architecture.png)
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer            | Tools/Services                           |
 |------------------|-------------------------------------------|
@@ -33,7 +33,7 @@ This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terr
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 .
 ├── terraform/ # EKS, VPC setup using Terraform
@@ -50,20 +50,20 @@ Edit
 
 ---
 
-## ⚙️ Features Implemented
+## Features Implemented
 
-- ✅ **Infrastructure as Code** (Terraform for AWS VPC + EKS)
-- ✅ **CI/CD pipeline** with GitHub Actions triggered on push
-- ✅ **Helm-based deployment** for reproducible Kubernetes releases
-- ✅ **Scalable EKS node group** with autoscaling
-- ✅ **Dockerized app** exposed via Kubernetes LoadBalancer
-- ✅ **Monitoring stack** using Prometheus and Grafana dashboards
+- **Infrastructure as Code** (Terraform for AWS VPC + EKS)
+- **CI/CD pipeline** with GitHub Actions triggered on push
+- **Helm-based deployment** for reproducible Kubernetes releases
+- **Scalable EKS node group** with autoscaling
+- **Dockerized app** exposed via Kubernetes LoadBalancer
+- **Monitoring stack** using Prometheus and Grafana dashboards
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 📦 Prerequisites
+### Prerequisites
 
 - AWS CLI configured
 - Terraform installed
@@ -73,7 +73,7 @@ Edit
 
 ---
 
-### 🛠️ Setup Steps
+### Setup Steps
 
 #### 1. Clone the repository
 
@@ -129,7 +129,8 @@ Username: admin
 
 Password: admin (or set via values)
 
-🧠 Why This Project Matters
+```
+Why This Project Matters
 This project aligns with real-world AWS DevOps roles requiring:
 
 Cloud-native CI/CD pipelines
@@ -140,10 +141,10 @@ Infrastructure automation (IaC)
 
 Observability and reliability at scale
 
-👤 Author
+Author
 Srivatsan Ganesh
-DevOps & Cloud Engineer | LinkedIn
-🇮🇳 Built with ❤️ and automation-first mindset
+DevOps & Cloud Engineer | https://www.linkedin.com/in/srivatsan-g/
 
-📝 License
+
+License
 This project is licensed under the MIT License# End-to-End DevOps Pipeline on AWS
