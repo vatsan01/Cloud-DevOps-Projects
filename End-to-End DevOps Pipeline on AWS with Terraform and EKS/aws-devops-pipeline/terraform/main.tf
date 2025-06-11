@@ -1,1 +1,0 @@
-Main Terraform config with VPC and EKS setup
