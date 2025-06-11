@@ -58,6 +58,7 @@ This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terr
 
 ## Folder Structure
 
+```text
 .
 ├── terraform/ # EKS, VPC setup using Terraform
 ├── app/ # Dockerized app (NGINX)
@@ -70,7 +71,7 @@ This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terr
 yaml
 Copy
 Edit
-
+```
 ---
 
 ## Features Implemented
