@@ -17,13 +17,36 @@ This project demonstrates a full-scale DevOps pipeline using **AWS EKS**, **Terr
 
 ## Architecture Diagram
 
-![Architecture](./architecture.png)
+```text
+                 +--------------------+
+                 |   GitHub Actions   |
+                 +--------+-----------+
+                          |
+                          v
+                 +--------+-----------+
+                 |   Terraform (IaC)  |
+                 |  AWS VPC + EKS     |
+                 +--------+-----------+
+                          |
+                          v
+                 +--------+-----------+
+                 |   AWS EKS Cluster  |
+                 +--------+-----------+
+                          |
+          +---------------+---------------+
+          |                               |
+          v                               v
++------------------+           +---------------------+
+| Dockerized App   |           | Prometheus + Grafana|
+| (via Helm Chart) |           |    Monitoring Stack |
++------------------+           +---------------------+
+```
 
 ---
 
 ## Tech Stack
 
-| Layer            | Tools/Services                           |
+| Layer            | Tools/Services                            |
 |------------------|-------------------------------------------|
 | Infrastructure   | AWS (VPC, IAM, EKS, EC2) + Terraform      |
 | CI/CD Pipeline   | GitHub Actions                            |
@@ -76,50 +99,57 @@ Edit
 ### Setup Steps
 
 #### 1. Clone the repository
-
 ```bash
 git clone https://github.com/vatsan01/Cloud-DevOps-Projects.git
 cd "End-to-End DevOps Pipeline on AWS with Terraform and EKS"
+```
+
 2. Provision EKS + VPC with Terraform
-bash
+```bash
 Copy
 Edit
 cd terraform
 terraform init
 terraform apply
 Update backend settings if using S3 for state.
+```
 
 3. Build & Push the Dockerized App
-bash
+```bash
 Copy
 Edit
 cd ../app
 docker build -t your-dockerhub-username/myapp .
 docker push your-dockerhub-username/myapp
 Update values.yaml with this image name.
+```
 
 4. Deploy to EKS using Helm
-bash
+```bash
 Copy
 Edit
 cd ../helm-charts
 helm upgrade --install myapp ./myapp -n dev --create-namespace
+```
+
 5. Set Up Monitoring
-bash
+```bash
 Copy
 Edit
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm install monitoring prometheus-community/kube-prometheus-stack -f ../monitoring/prometheus-config.yaml
-📊 Access the App & Monitoring
-Get LoadBalancer URL:
+Access the App & Monitoring
+```
 
-bash
+Get LoadBalancer URL:
+```bash
 Copy
 Edit
 kubectl get svc -n dev
-Access Grafana:
+```
 
-bash
+Access Grafana:
+```bash
 Copy
 Edit
 kubectl get svc -n default
@@ -128,8 +158,8 @@ Default credentials:
 Username: admin
 
 Password: admin (or set via values)
-
 ```
+
 Why This Project Matters
 This project aligns with real-world AWS DevOps roles requiring:
 
