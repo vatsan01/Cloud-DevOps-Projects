@@ -1,0 +1,26 @@
+# macOS system files
+.DS_Store
+
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Helm/Kubernetes
+*.tgz
+.kube/
+
+# AWS/Secrets
+*.pem
+.env
+
+# Zip archives
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Node.js (in case you add frontend code)
+node_modules/
+
