@@ -94,7 +94,7 @@ WHERE log_entry LIKE '%ERROR%';
 
 ---
 
-## Optional: CloudWatch Monitoring
+## CloudWatch Monitoring
 - Go to CloudWatch → Log groups → Lambda function
 - Add metric filter:
   - Pattern: `ERROR`
