@@ -14,6 +14,8 @@ spec:
       labels:
         app: prometheus
     spec:
+
+      serviceAccountName: prometheus   # <-- add this line
       containers:
         - name: prometheus
           image: prom/prometheus
@@ -27,7 +29,6 @@ spec:
         - name: config-volume
           configMap:
             name: prometheus-config
----
 apiVersion: v1
 kind: Service
 metadata:
