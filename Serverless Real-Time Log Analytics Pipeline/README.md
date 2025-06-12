@@ -119,14 +119,6 @@ Serverless Real-Time Log Analytics Pipeline/
 
 ---
 
-## Sample Output Screenshots to Include
-- S3: `sample-log.txt` uploaded
-- Lambda: Triggered log in CloudWatch
-- Email: SNS alert received
-- Athena: Query result showing error
-
----
-
 ## Tech Stack
 - **AWS Lambda** (Python 3.9)
 - **AWS S3** (Log ingestion)
