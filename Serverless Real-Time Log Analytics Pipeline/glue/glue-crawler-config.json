@@ -1,0 +1,8 @@
+{
+  "name": "LogDataCrawler",
+  "role": "AWSGlueServiceRole",
+  "database": "log_database",
+  "s3_target": "s3://app-log-storage-<your-id>/logs/",
+  "schedule": "cron(0 * * * ? *)",
+  "table_prefix": "log_"
+}

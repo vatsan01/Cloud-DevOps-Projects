@@ -1,0 +1,12 @@
+{
+  "filterName": "ErrorLogFilter",
+  "logGroupName": "/aws/lambda/ProcessLogFunction",
+  "filterPattern": "?ERROR ?Error ?error",
+  "metricTransformations": [
+    {
+      "metricName": "ErrorLogCount",
+      "metricNamespace": "LogMonitoring",
+      "metricValue": "1"
+    }
+  ]
+}
