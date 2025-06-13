@@ -1,5 +1,5 @@
-resource "aws_iam_role" "example" {
-  name = "example-role"
+resource "aws_iam_role" "ec2_role" {
+  name = "ec2-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [{
