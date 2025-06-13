@@ -67,3 +67,7 @@ resource "aws_lb_target_group_attachment" "web_attachment" {
   target_id        = aws_instance.web.id
   port             = 80
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
