@@ -1,6 +1,6 @@
 # Multi-AZ Web App Deployment with High Availability
 
-## 📌 Project Description
+## Project Description
 
 This project demonstrates how to deploy a **highly available**, production-ready web application on AWS using **Terraform**. The deployment includes:
 
@@ -14,7 +14,7 @@ This project demonstrates how to deploy a **highly available**, production-ready
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
 ```
 User ---> ALB ---> EC2 instance (Apache) ---> index.html
@@ -26,7 +26,7 @@ User ---> ALB ---> EC2 instance (Apache) ---> index.html
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - AWS (EC2, ALB, VPC, IAM, CloudTrail, RDS)
 - Terraform (v1.6+)
@@ -35,7 +35,7 @@ User ---> ALB ---> EC2 instance (Apache) ---> index.html
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Multi_AZ_Web_App_Deployment_with_High_Availability/
@@ -55,7 +55,7 @@ Multi_AZ_Web_App_Deployment_with_High_Availability/
 
 ---
 
-## 🚀 How to Deploy
+## How to Deploy
 
 ### Step 1: Clone the Repo
 ```bash
@@ -86,7 +86,7 @@ Visit this URL in your browser to see the running web app.
 
 ---
 
-## 🧪 Post-Deployment Checks
+## Post-Deployment Checks
 
 1. **ALB Target Health Check** → Should be `Healthy`
 2. **Browser Check** → Visit ALB DNS
@@ -97,7 +97,7 @@ Visit this URL in your browser to see the running web app.
 
 ---
 
-## 🧹 To Destroy the Infrastructure
+## To Destroy the Infrastructure
 
 ```bash
 terraform destroy -auto-approve
@@ -105,7 +105,7 @@ terraform destroy -auto-approve
 
 ---
 
-## ✅ Final Output
+## Final Output
 
 ```
 <h1>Welcome to Highly Available Web App!</h1>
@@ -113,7 +113,7 @@ terraform destroy -auto-approve
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Srivatsan Ganesh  
 Cloud DevOps | AWS | Terraform | Python
