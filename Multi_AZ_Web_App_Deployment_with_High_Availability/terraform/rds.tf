@@ -1,3 +1,11 @@
+resource "aws_db_subnet_group" "db_subnet_group" {
+  name       = "db-subnet-group"
+  subnet_ids = aws_subnet.public_subnet[*].id
+
+  tags = {
+    Name = "DB Subnet Group"
+  }
+}
 resource "aws_db_instance" "default" {
   allocated_storage    = 20
   engine               = "mysql"
