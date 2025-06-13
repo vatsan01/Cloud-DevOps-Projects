@@ -17,6 +17,8 @@ resource "aws_db_instance" "default" {
   skip_final_snapshot  = true
   multi_az             = true
 
+  db_subnet_group_name = aws_db_subnet_group.db_subnet_group.name
+
   tags = {
     Name = "MyRDSInstance"
   }
