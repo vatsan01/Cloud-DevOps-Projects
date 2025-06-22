@@ -1,9 +1,0 @@
-{
-  "dashboard": {
-    "title": "EC2 Monitoring",
-    "panels": [],
-    "templating": {
-      "list": []
-    }
-  }
-}
