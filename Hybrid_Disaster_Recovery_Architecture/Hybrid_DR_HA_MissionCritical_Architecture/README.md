@@ -16,6 +16,10 @@ This project demonstrates the implementation of a Hybrid Cloud Disaster Recovery
 
 ---
 
+## Architecture
+
+![ChatGPT Image Jun 22, 2025, 01_41_27 PM](https://github.com/user-attachments/assets/1d694269-a9c6-4773-8f60-a117d8b9e9e0)
+
 ## STEP 1: Setup and Prerequisites
 
 ### Install Locally
